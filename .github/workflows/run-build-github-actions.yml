@@ -1,0 +1,11 @@
+name: run-build-github-actions.yml
+on: [push]
+jobs:
+  build-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.3
+        with:
+          maven-version: 3.8.5
+      - run: mvn assembly:assembly
