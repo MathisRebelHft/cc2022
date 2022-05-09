@@ -8,4 +8,4 @@ jobs:
         uses: stCarolas/setup-maven@v4.3
         with:
           maven-version: 3.8.5
-      - run: mvn assembly:assembly
+      - run: mvn -e assembly:assembly
