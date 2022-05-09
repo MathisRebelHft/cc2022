@@ -9,4 +9,5 @@ jobs:
         with:
           maven-version: 3.8.5
       - run: pwd
+      - run: ls -al
       - run: mvn -e assembly:assembly
